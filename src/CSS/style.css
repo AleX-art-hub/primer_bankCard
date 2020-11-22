@@ -47,6 +47,11 @@ body > * {
 rgba прозрачность
 border-radius скруглить углы для родителя*/
 
+:root {
+  --card-width: 320px;
+  --card-height: 200px;
+  --color-circle: rgba(255, 255, 255, 0.3);
+}
 body {
   background-color: lightgrey;
   padding-top: 50px;
@@ -56,8 +61,8 @@ body * {
   margin: 0 auto;
 }
 .card {
-  width: 320px;
-  height: 200px;
+  width: var(--card-width);
+  height: var(--card-height);
   background: linear-gradient(#e66465, blue);
   border-radius: 8px;
   overflow: hidden;
@@ -69,10 +74,10 @@ body * {
 }
 
 #circle1 {
-  width: 160px;
-  height: 160px;
+  width: calc(var(--card-width) / 2);
+  height: calc(var(--card-width) / 2);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--color-circle);
   position: absolute;
   top: -28px;
   right: -70px;
