@@ -1,0 +1,38 @@
+<!--
+    position
+    1)по ум. static - элемент на своём месте(!!! не применяется: top, right, bottom, left, z-index)
+    по умолчанию
+    Ко всем остальным мы можем применить top, right, bottom, left, z-index!
+    2) relative - в соответсвии с нормальным потоком докумета смещаеться относительно
+    3) absolute - выбился из потока (относительно ближайшего родителя)
+    4) fixed - выбился из потока (относительно ближайшего родителя)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/CSS/style.css">
+</head>
+<body>
+    <!--
+    <div class="grand">
+        <div class="parent">
+            <div id="child1"></div>
+            <div id="child2"></div>
+        </div>
+    </div>
+    -->
+    <div class="card">
+        <div class="info">
+            <h4>Weekly Sales</h4>
+            <h1>$ 15,000</h1>
+            <h5>Increased by 10%</h5>
+        </div>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+    </div>
+</body>
+</html>
